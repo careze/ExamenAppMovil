@@ -1,0 +1,39 @@
+<ion-header [translucent]="true" class="header-card">
+  <ion-toolbar >
+    <ion-buttons slot="start" >
+      <ion-back-button routerLink="/login" icon="arrow-back"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Menu</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content [fullscreen]="true" class="custom-background">
+  <div class="welcome-card tertiary ">
+    <h2>Bienvenido:Usuario</h2>
+  </div>
+   <ion-card-header>
+    <ion-card-title class="ion-text-center">Menu</ion-card-title>
+  </ion-card-header>
+  <div class="button-container">
+    <ion-button class="full-width-button" color="tertiary" routerLink="/escanear">
+      <ion-icon name="qr-code-outline" slot="start"></ion-icon>
+      Escanear
+    </ion-button>
+    <ion-button class="full-width-button" color="tertiary" routerLink="/visualizar">
+      <ion-icon name="eye-outline" slot="start"></ion-icon>
+      Visualizar
+    </ion-button>
+    <ion-button class="full-width-button" color="danger"  routerLink="/home">
+      <ion-icon name="power-outline" slot="start"></ion-icon>
+      Desconectar
+    </ion-button>
+  </div>
+  <ion-footer>
+    <ion-row class="footer-content">
+      <ion-col size="6" class="text-right">
+        <ion-img src="assets/img/logo.png"></ion-img>
+      </ion-col>
+    </ion-row>
+  </ion-footer>
+</ion-content>

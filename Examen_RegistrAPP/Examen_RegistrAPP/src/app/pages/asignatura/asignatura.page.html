@@ -1,0 +1,33 @@
+<ion-header [translucent]="true"  class="header-card"> 
+  <ion-toolbar >
+    <ion-buttons slot="start" >
+      <ion-back-button routerLink="/visualizar" icon="arrow-back"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Asignatura</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content [fullscreen]="true" class="ion-padding">
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Información de la Asignatura</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <p><strong>Nombre de la Asignatura:</strong>Matematicas</p>
+      <p><strong>Profesor:</strong>Julio Peres</p>
+      <p><strong>Hora:</strong>08:30/12:00</p>
+      <p><strong>Fecha:</strong>Lunes/Viernes</p>
+      <p><strong>Sala:</strong>404 </p>
+    </ion-card-content>
+</ion-card>
+
+
+<ion-footer>
+  <ion-row class="footer-content">
+    <ion-col size="6" class="text-right">
+      <ion-img src="assets/img/logo.png"></ion-img>
+      </ion-col>
+    </ion-row>
+  </ion-footer>
+</ion-content>

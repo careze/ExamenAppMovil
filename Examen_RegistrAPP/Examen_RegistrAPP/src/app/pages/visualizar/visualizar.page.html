@@ -1,0 +1,82 @@
+<ion-header [translucent]="true" class="header-card">
+  <ion-toolbar >
+    <ion-buttons slot="start" >
+      <ion-back-button routerLink="/menu" icon="arrow-back"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Visualizar</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+  <ion-card-header>
+    <ion-card-title class="ion-text-center">Asignatura</ion-card-title>
+  </ion-card-header>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Detalles:Matematicas</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-list>
+        <ion-item>
+          <ion-label>Asignatura:</ion-label>
+          <strong >Matematicas</strong>
+        </ion-item>
+        <ion-item>
+          <ion-label>Hora:</ion-label>
+          <strong >08:30/12:00</strong>
+        </ion-item>
+      </ion-list>
+      <ion-button expand="full" color="tertiary" (click)="verAsignatura()" >Ver Asignatura</ion-button>
+    </ion-card-content>
+  </ion-card>
+
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Detalles:Lenguaje</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-list>
+        <ion-item>
+          <ion-label>Asignatura:</ion-label>
+          <strong >Lenguaje</strong>
+        </ion-item>
+        <ion-item>
+          <ion-label>Hora:</ion-label>
+          <strong >10:30/12:00</strong>
+        </ion-item>
+      </ion-list>
+      <ion-button expand="full" color="tertiary" (click)="verAsignatura()" >Ver Asignatura</ion-button>
+    </ion-card-content>
+  </ion-card>
+
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Detalles:Ciencias</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-list>
+        <ion-item>
+          <ion-label>Asignatura:</ion-label>
+          <strong >Ciencias</strong>
+        </ion-item>
+        <ion-item>
+          <ion-label>Hora:</ion-label>
+          <strong >12:00/14:00</strong>
+        </ion-item>
+      </ion-list>
+      <ion-button expand="full" color="tertiary" (click)="verAsignatura()" >Ver Asignatura</ion-button>
+    </ion-card-content>
+  </ion-card>
+  
+  
+  <ion-footer>
+    <ion-row class="footer-content">
+      <ion-col size="6" class="text-right">
+        <ion-img src="assets/img/logo.png"></ion-img>
+      </ion-col>
+    </ion-row>
+  </ion-footer>
+</ion-content>
